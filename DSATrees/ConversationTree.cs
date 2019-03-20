@@ -57,6 +57,17 @@ namespace DSATrees
             }
             
         }
+
+        public void TraverseDownTree(ConversationNode node)
+        {
+            Console.WriteLine("Parent Node phrase {0}", node.phrase);
+            if (node == null) return;
+            if (node.children != null)
+                foreach (var item in node.children)
+                    TraverseDownTree(item);
+            
+
+        }
     }
     
     public class ConversationNode

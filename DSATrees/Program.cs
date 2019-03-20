@@ -48,8 +48,10 @@ namespace DSATrees
             int choice = int.Parse(Console.ReadLine());
             Console.WriteLine("Your chose {0} ", conversataion.root.children[choice].phrase);
 
-            Console.WriteLine("Iterate over parent");
-            conversataion.TraverseAcrossTree(conversataion.root);
+            //Console.WriteLine("Iterate over parent");
+            //conversataion.TraverseAcrossTree(conversataion.root);
+            conversataion.TraverseDownTree(conversataion.root);
+
             Console.ReadKey();
         }
     }
