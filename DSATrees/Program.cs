@@ -35,6 +35,8 @@ namespace DSATrees
 
             //ConversationNode phrase = conversataion.Find(conversataion.root, "None of your Business");
             conversataion.InsertAfter("None of your Business", "How rude");
+            conversataion.InsertAfter("My Name is Bill", "What are you a Duck?");
+            conversataion.InsertAfter("My Name is Bill", "Pay up so. Your Bill is Due!");
 
             Console.WriteLine("{0}", conversataion.root.phrase);
 
